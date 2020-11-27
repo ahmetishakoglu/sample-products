@@ -1,0 +1,201 @@
+/* CSS Document */
+html, body{
+	font-family: sans-serif;
+	box-sizing: border-box;
+	position: relative;
+	background-color: #fff;
+	clear: both;
+	padding: 0; margin: 0;
+	color: #080808;
+}
+*,*:before,*:after{ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing:border-box }
+img { border:0; }
+a {	text-decoration:none; color:#080808; }
+p { margin:0; }
+:focus { outline:none; }
+.clear { clear:both; } 
+div, h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; }
+
+
+.container {
+	width: 1200px; 
+	display: block;
+	margin: 100px auto; }
+.container-header {
+	width: 100%; display: table;
+	font-family: sans-serif;
+	font-weight: lighter;
+	text-align: center;
+	font-size: 24px; 
+	line-height: 34px;
+	margin: 10px 0; }
+
+.prod-list-item {
+	width: calc(100% - 12px);
+	height: 400px;
+	margin: 0 auto;
+	display: block;
+	position: relative;
+	background-color: #f7f7f7;
+}
+.prod-list-item a {
+	width: 100%; height: 100%;
+	display: block; }
+
+.prod-list-img {
+	width: 100%; height: 210px;
+	display: table;
+	padding: 15px 0 10px 0; }
+.prod-list-img img {
+	width: 100%; height: 100%;
+	max-height: 190px;
+	object-fit: contain; }
+
+.img_center {
+	display: table-cell;
+	vertical-align: middle; }
+
+.prod-list-head {
+	width: 100%; height: 66px;
+	display: table; text-align: center;
+	font-weight: bold;
+	padding: 0 20px;
+	font-family: sans-serif;
+	font-size: 14px;
+	line-height: 22px;
+}
+
+.prod-list-categories {
+	width: 100%; height: 44px;
+	display: block; text-align: center;
+	font-size: 14px; line-height: 24px;
+	color: #a0a0a0;
+	padding: 0 20px; }
+.prod-list-categories span {
+	display: ruby;
+	position: relative;
+	margin-right: 8px;
+	padding-right: 8px; }
+.prod-list-categories span:last-child {
+	padding: 0; margin: 0; }
+
+.prod-list-categories span::after {
+	content: ''; position: absolute;
+	right: 0; top: 2px;
+	width: 1px; height: 12px;
+	background: #a0a0a0; }
+.prod-list-categories span:last-child::after {
+	content: none; }
+
+.prod-list-price-box {
+	width: 100%; 
+	display: table;
+	margin-top: 12px; 
+}
+
+.prod-list-price-content {
+	width: auto; display: table;
+	margin: 0 auto; }
+
+.prod-list-price-text {
+	display: table; float: left;
+	font-size: 14px; 
+	line-height: 30px;
+	font-weight: bold;
+}
+.prod-list-price-text.old {
+	font-size: 12px;
+	text-decoration: line-through;
+	color: #a0a0a0;
+	margin-left: 10px;
+}
+
+.prod-list-basePrice {
+	width: 100%; display: table;
+	text-align: center;
+	font-size: 10px; line-height: 16px;
+	margin-top: 3px;
+	color: #a0a0a0;
+}
+
+.prod-list-badges {
+	position: absolute;
+	left: 0; top: 20px; }
+
+.badges-item {
+	width: 50px; height: 34px;
+	display: block;
+	margin-bottom: 5px;
+	text-align: center;
+	line-height: 34px;
+}
+.badges-item.discount {
+	background-color: #c3121c;
+	color: #fff;
+}
+.badges-item.like {
+	background-color: #fff;
+	color: #802d57;
+}
+.badges-item.like span {
+	padding-left: 18px;
+	background-image: url("../img/heart.png");
+	background-position: left center;
+	background-repeat: no-repeat;
+	background-size: 14px;
+}
+.badges-item.new {
+	background-color: #292a2c;
+	color: #fff;
+	font-weight: bold;
+}
+
+
+/* iphone 5/5s dikey */
+@media only screen and (max-width:359px) {
+	.container { width: 300px; }
+}
+/* Samsung S3 dikey */
+@media only screen and (min-width:360px) and (max-width:369px) {
+	.container { width: 340px; }
+}
+/* iphone 6/6s dikey */
+@media only screen and (min-width:370px) and (max-width:399px){
+	.container { width: 340px; }
+}
+/* iphone Plus dikey */ 
+@media only screen and (min-width:400px) and (max-width:479px) {
+	.container { width: 360px; }
+}
+/* iphone 4 yatay */
+@media only screen and (min-width:480px) and (max-width:559px) {
+	.container { width: 440px; }
+}
+/* iphone 5/5s yatay */
+@media only screen and (min-width:560px) and (max-width:639px) {
+	.container { width: 520px; }
+}
+/* Samsung S3 yatay */
+@media only screen and (min-width:640px) and (max-width:659px) {
+	.container { width: 600px; }
+}
+/* iphone 6/6s yatay */
+@media only screen and (min-width:660px) and (max-width:699px) {
+	.container { width: 620px; }
+}
+/* iphone Plus yatay */
+@media only screen and (min-width:700px) and (max-width:759px) {
+	.container { width: 660px; }
+}
+/* tablet dikey */
+@media only screen and (min-width:760px) and (max-width:999px) {
+	.container { width: 720px; }
+}
+/* tabley yatay */
+@media only screen and (min-width:1000px) and (max-width:1024px) {
+	.container { width: 900px; }
+}
+/* tabley yatay pro */
+@media only screen and (min-width:1025px) and (max-width:1200px) {
+	.container { width: 1000px; }
+}
